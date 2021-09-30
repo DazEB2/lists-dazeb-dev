@@ -1,0 +1,74 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  page:
+    type: page
+    label: Page
+    folder: pages
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+  page_1:
+    type: page
+    label: Page 1
+    match:
+      - posts/emoji-support.md
+      - posts/ipsum-lore copy 2.md
+      - posts/ipsum-lore copy.md
+      - posts/ipsum-lore-de copy 2.md
+      - posts/ipsum-lore-de copy.md
+      - posts/ipsum-lore-de-re-mo-mi.md
+      - posts/ipsum-lore-de-re-mo.md
+      - posts/ipsum-lore-de-re.md
+      - posts/ipsum-lore-de.md
+      - posts/ipsum-lore-guti-sit-volu-sit-amet.md
+      - posts/ipsum-lore.md
+      - posts/lorem-catu-ale copy 2.md
+      - posts/lorem-catu-ale copy 3.md
+      - posts/lorem-catu-ale copy 4.md
+      - posts/lorem-catu-ale copy 5.md
+      - posts/lorem-catu-ale copy.md
+      - posts/lorem-catu-ale.md
+      - posts/lorem-ipsum copy 2.md
+      - posts/lorem-ipsum copy.md
+      - posts/lorem-ipsum-sit-ale.md
+      - posts/lorem-ipsum.md
+      - posts/markdown-syntax.md
+      - posts/math-typesetting.md
+      - posts/placeholder-text.md
+      - projects/ipsum-lore-de-re-mo.md
+      - projects/ipsum-lore-de-re.md
+      - projects/ipsum-lore-de.md
+      - projects/ipsum-lore.md
+      - projects/lorem-catu-ale.md
+    fields:
+      - type: string
+        name: author
+        label: Author
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: date
+        label: Date
+      - type: string
+        name: description
+        label: Description
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: boolean
+        name: math
+        label: Math
